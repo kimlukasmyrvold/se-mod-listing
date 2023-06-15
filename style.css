@@ -106,20 +106,29 @@ a:hover {
     color: var(--clr-primary);
 }
 
-img {
+.mod-table {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0 1em;
+}
+
+.mod-table > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.mod-table > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+    width: 45ch;
+}
+
+.mod-table img {
     max-width: 100%;
-    width: 100px;
-}
-
-table {
-    border-spacing: 1em;
-}
-
-table td {
-    max-width: 45ch;
-}
-
-table img {
     width: 300px;
     border-radius: 1em;
 }
