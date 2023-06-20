@@ -25,13 +25,14 @@
 }
 
 * {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 
     background-color: var(--clr-background);
     color: var(--clr-text);
@@ -48,7 +49,7 @@ main {
     margin-inline: auto;
 }
 
-.flow > * + * {
+.flow>*+* {
     margin-block-start: 1em;
 }
 
@@ -113,14 +114,14 @@ a:hover {
     padding: 0 1em;
 }
 
-.mod-table > div {
+.mod-table>div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 1em;
 }
 
-.mod-table > div > div {
+.mod-table>div>div {
     display: flex;
     flex-direction: column;
     gap: .2em;
